@@ -1,0 +1,40 @@
+@charset "utf-8";
+@import "repo-card";
+
+.archive.projects {
+  .single-subtitle {
+    margin-block: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  .gh-repo-card-container:has(.total-stars) {
+    margin-top: 2rem;
+  }
+
+  .group-summary {
+    display: inline;
+    color: var(--color-muted);
+    border-color: var(--bc-gh-repo-card);
+    border-style: solid;
+    border-width: var(--bw-gh-repo-card);
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 14px;
+    border-radius: 2em;
+    padding: .25em 1em;
+    white-space: nowrap;
+    position: absolute;
+    right: 0;
+    transform: translateY(-43px);
+
+    &.total-stars {
+      right: 8px;
+      transform: translateY(-26px);
+    }
+  }
+
+  #comments {
+    padding: 2rem 0;
+    margin-top: 2rem;
+  }
+}

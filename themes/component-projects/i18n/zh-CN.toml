@@ -1,0 +1,9 @@
+# Translations for Simplified Chinese
+# 简体中文的翻译
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+[projects]
+relatedArticles = "相关文章"
+
+[projects.totalStarCount]
+other = "累计 {{ .Count }} stars"
