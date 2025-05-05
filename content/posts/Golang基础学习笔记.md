@@ -29,7 +29,7 @@ type 接口名称er interface{
 
 ```go
 type 结构体名称 struct{
-    Name 类型（string、int、bool等）
+  Name 类型 //（string、int、bool等）
 }
 ```
 

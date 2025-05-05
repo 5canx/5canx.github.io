@@ -20,7 +20,21 @@ enableEmoji = true
     lineNos = true
     lineNumbersInTable = true
     noClasses = false
-
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      strikethrough = false
+      # https://gohugo.io/getting-started/configuration-markup/#extras
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.delete]
+          enable = true
+        [markup.goldmark.extensions.extras.insert]
+          enable = true
+        [markup.goldmark.extensions.extras.mark]
+          enable = true
+        [markup.goldmark.extensions.extras.subscript]
+          enable = true
+        [markup.goldmark.extensions.extras.superscript]
+          enable = true
 [security]
   [security.funcs]
     getenv = ['^HUGO_', '^HUGO_PARAMS_GHTOKEN$', '^USER$', '^HOME$']
@@ -69,11 +83,11 @@ enableEmoji = true
         [languages.zh-cn.menu.main.params]
           icon = "fa-solid fa-users"
       [[languages.zh-cn.menu.main]]
-        identifier = "life"
+        identifier = "diary"
         pre = ""
         post = ""
         name = "生活"
-        url = "/life/"
+        url = "/diary/"
         title = ""
         weight = 5
         [languages.zh-cn.menu.main.params]

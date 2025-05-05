@@ -36,7 +36,7 @@ which chromedriver
 ```
 镜像官网查看版本：
 
-![image-20240516145330376](https://fastly.jsdelivr.net/gh/hack-scan/Blog-pic/posts/posts/202405161453416.png)
+
 
 ![image-20240516145743427](https://fastly.jsdelivr.net/gh/hack-scan/Blog-pic/posts/202405161457455.png)
 
