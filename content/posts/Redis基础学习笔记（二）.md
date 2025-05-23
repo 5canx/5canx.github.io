@@ -9,8 +9,10 @@ weight: 0
 description: Redis 事务乐观锁学习理解
 tags:
   - Redis
+  - 数据库
 categories:
   - Redis
+  - 数据库
 ---
 <!--more-->
 

@@ -9,8 +9,10 @@ weight: 0
 description: Redis 的八种数据结构
 tags:
   - Redis
+  - 数据库
 categories:
   - Redis
+  - 数据库
 ---
 <!--more-->
 

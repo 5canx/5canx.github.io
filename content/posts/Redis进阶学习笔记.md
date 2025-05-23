@@ -9,8 +9,11 @@ weight: 0
 description: Redis主从复制、哨兵模式学习理解
 tags:
   - Redis
+  - 数据库
 categories:
   - Redis
+  - 数据库
+
 ---
 <!--more-->
 
