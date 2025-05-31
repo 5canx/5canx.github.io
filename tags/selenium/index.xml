@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Selenium - 标签 - Scan&#39;s Blog</title>
+    <link>https://hack-scan.github.io/tags/selenium/</link>
+    <description>Scan&#39;s Blog</description>
+    <generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator>
+    <language>zh-cn</language>
+    <managingEditor>safexuan@gmail.com (Scan)</managingEditor>
+    <webMaster>safexuan@gmail.com (Scan)</webMaster>
+    <lastBuildDate>Sun, 04 Jun 2023 17:00:07 +0800</lastBuildDate>
+    <atom:link href="https://hack-scan.github.io/tags/selenium/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Selenium——进阶使用</title>
+      <link>https://hack-scan.github.io/posts/chromedriver%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Sun, 04 Jun 2023 17:00:07 +0800</pubDate><author>safexuan@gmail.com (Scan)</author>
+      <guid>https://hack-scan.github.io/posts/chromedriver%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8/</guid>
+      <category domain="https://hack-scan.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">自动化测试</category>
+      <category domain="https://hack-scan.github.io/categories/python/">Python</category>
+      <description>进阶使用执行：JS代码，模拟按键组合键、切换窗口总结。</description>
+    </item>
+    <item>
+      <title>Selenium——ChromeDriver安装</title>
+      <link>https://hack-scan.github.io/posts/chromedriver%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sat, 03 Jun 2023 17:00:07 +0800</pubDate><author>safexuan@gmail.com (Scan)</author>
+      <guid>https://hack-scan.github.io/posts/chromedriver%E5%AE%89%E8%A3%85/</guid>
+      <category domain="https://hack-scan.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">自动化测试</category>
+      <category domain="https://hack-scan.github.io/categories/python/">Python</category>
+      <description>安装便捷、对应版本、安装建议、不同系统下的安装方法</description>
+    </item>
+  </channel>
+</rss>

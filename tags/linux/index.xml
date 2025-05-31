@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux - 标签 - Scan&#39;s Blog</title>
+    <link>https://hack-scan.github.io/tags/linux/</link>
+    <description>Scan&#39;s Blog</description>
+    <generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator>
+    <language>zh-cn</language>
+    <managingEditor>safexuan@gmail.com (Scan)</managingEditor>
+    <webMaster>safexuan@gmail.com (Scan)</webMaster>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://hack-scan.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
