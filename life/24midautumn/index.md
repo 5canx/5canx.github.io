@@ -9,5 +9,5 @@
 ---
 
 > 作者: <no value>  
-> URL: https://hack-scan.github.io/life/24midautumn/  
+> URL: http://localhost:1313/life/24midautumn/  
 

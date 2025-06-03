@@ -94,5 +94,5 @@ GET /_cat/indices?v
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: https://hack-scan.github.io/posts/elasticsearch%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/  
+> URL: http://localhost:1313/posts/elasticsearch%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/  
 

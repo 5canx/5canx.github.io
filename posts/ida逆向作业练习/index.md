@@ -179,5 +179,5 @@ print(binascii.hexlify(encrypted_bytes))
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: https://hack-scan.github.io/posts/ida%E9%80%86%E5%90%91%E4%BD%9C%E4%B8%9A%E7%BB%83%E4%B9%A0/  
+> URL: http://localhost:1313/posts/ida%E9%80%86%E5%90%91%E4%BD%9C%E4%B8%9A%E7%BB%83%E4%B9%A0/  
 

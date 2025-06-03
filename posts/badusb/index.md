@@ -277,5 +277,5 @@ load auto_add_route
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: https://hack-scan.github.io/posts/badusb/  
+> URL: http://localhost:1313/posts/badusb/  
 
