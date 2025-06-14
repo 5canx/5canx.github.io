@@ -1,4 +1,4 @@
-# Golang基础学习笔记
+# Go基础学习笔记
 
 <!--more-->
 
@@ -282,12 +282,63 @@ func main() {
 }
 ```
 
+---
 
+## 操作redis
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"os"
+	"time"
+
+	"github.com/redis/go-redis/v9"
+)
+
+func string(ctx context.Context, client *redis.Client) {
+	key := "test"
+	value := "test_v"
+	err := client.Set(ctx, key, value, time.Second*1).Err() //写_ttl为1秒
+	checkError(err)
+	time.Sleep(time.Second * 2)
+	v2, err := client.Get(ctx, key).Result() //读
+	checkError(err)
+	fmt.Println(v2)
+
+	client.Del(ctx, key)
+}
+
+func main() {
+	cilent := redis.NewClient(&redis.Options{
+		Addr:     "localhost:6379",
+		Password: "123456",
+		DB:       0,        
+	})
+	ctx := context.TODO()
+	string(ctx, cilent)
+
+}
+func checkError(err error) {
+	{
+		if err != nil {
+			if err == redis.Nil {
+				fmt.Println("key does not exist")
+				return
+			}
+			fmt.Println(err)
+			os.Exit(1)
+		}
+	}
+}
+```
 
 
 
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: http://localhost:1313/posts/golang%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/  
+> URL: https://hack-scan.github.io/posts/golang%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/  
 

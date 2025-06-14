@@ -60,5 +60,5 @@ D:\\Typora\\Typora.exe\" \"%1\""
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: http://localhost:1313/posts/typora%E7%A0%B4%E8%A7%A3%E4%BD%BF%E7%94%A8/  
+> URL: https://hack-scan.github.io/posts/typora%E7%A0%B4%E8%A7%A3%E4%BD%BF%E7%94%A8/  
 

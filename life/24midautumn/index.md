@@ -1,13 +1,9 @@
 # 贰肆年中秋节记
 
-
-<!--more-->
-
-儿时只知灯火可亲，长大才悟得团圆难得.
-
+_**本文已加密，因此其原始内容不可见！**_
 
 ---
 
 > 作者: <no value>  
-> URL: http://localhost:1313/life/24midautumn/  
+> URL: https://hack-scan.github.io/life/24midautumn/  
 

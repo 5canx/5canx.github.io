@@ -2,21 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang - 分类 - Scan&#39;s Blog</title>
-    <link>http://localhost:1313/categories/golang/</link>
+    <link>https://hack-scan.github.io/categories/golang/</link>
     <description>Scan&#39;s Blog</description>
     <generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator>
     <language>zh-cn</language>
     <managingEditor>safexuan@gmail.com (Scan)</managingEditor>
     <webMaster>safexuan@gmail.com (Scan)</webMaster>
-    <lastBuildDate>Tue, 18 Jun 2024 18:30:07 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/golang/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Jun 2025 10:30:07 +0800</lastBuildDate>
+    <atom:link href="https://hack-scan.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Golang基础学习笔记</title>
-      <link>http://localhost:1313/posts/golang%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <title>go管道</title>
+      <link>https://hack-scan.github.io/posts/go%E7%AE%A1%E9%81%93/</link>
+      <pubDate>Sat, 14 Jun 2025 10:30:07 +0800</pubDate><author>safexuan@gmail.com (Scan)</author>
+      <guid>https://hack-scan.github.io/posts/go%E7%AE%A1%E9%81%93/</guid>
+      <category domain="https://hack-scan.github.io/categories/golang/">Golang</category>
+      <description>go管道</description>
+    </item>
+    <item>
+      <title>go死锁</title>
+      <link>https://hack-scan.github.io/posts/golang%E6%AD%BB%E9%94%81/</link>
+      <pubDate>Sat, 14 Jun 2025 10:30:07 +0800</pubDate><author>safexuan@gmail.com (Scan)</author>
+      <guid>https://hack-scan.github.io/posts/golang%E6%AD%BB%E9%94%81/</guid>
+      <category domain="https://hack-scan.github.io/categories/golang/">Golang</category>
+      <description>go死锁</description>
+    </item>
+    <item>
+      <title>go协程</title>
+      <link>https://hack-scan.github.io/posts/go%E5%8D%8F%E7%A8%8B/</link>
+      <pubDate>Wed, 11 Jun 2025 20:30:07 +0800</pubDate><author>safexuan@gmail.com (Scan)</author>
+      <guid>https://hack-scan.github.io/posts/go%E5%8D%8F%E7%A8%8B/</guid>
+      <category domain="https://hack-scan.github.io/categories/golang/">Golang</category>
+      <description>go协程</description>
+    </item>
+    <item>
+      <title>go基础学习笔记</title>
+      <link>https://hack-scan.github.io/posts/golang%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Tue, 18 Jun 2024 18:30:07 +0800</pubDate><author>safexuan@gmail.com (Scan)</author>
-      <guid>http://localhost:1313/posts/golang%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <category domain="http://localhost:1313/categories/golang/">Golang</category>
-      <description>Golang基础学习笔记</description>
+      <guid>https://hack-scan.github.io/posts/golang%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <category domain="https://hack-scan.github.io/categories/golang/">Golang</category>
+      <description>go基础学习笔记</description>
     </item>
   </channel>
 </rss>

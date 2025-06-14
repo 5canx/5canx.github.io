@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>近源渗透 - 分类 - Scan&#39;s Blog</title>
-    <link>http://localhost:1313/categories/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F/</link>
+    <link>https://hack-scan.github.io/categories/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F/</link>
     <description>Scan&#39;s Blog</description>
     <generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator>
     <language>zh-cn</language>
     <managingEditor>safexuan@gmail.com (Scan)</managingEditor>
     <webMaster>safexuan@gmail.com (Scan)</webMaster>
     <lastBuildDate>Sat, 27 May 2023 09:56:07 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hack-scan.github.io/categories/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>携Badusb进校园的系列测试</title>
-      <link>http://localhost:1313/posts/badusb/</link>
+      <link>https://hack-scan.github.io/posts/badusb/</link>
       <pubDate>Sat, 27 May 2023 09:56:07 +0800</pubDate><author>safexuan@gmail.com (Scan)</author>
-      <guid>http://localhost:1313/posts/badusb/</guid>
-      <category domain="http://localhost:1313/categories/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F/">近源渗透</category>
+      <guid>https://hack-scan.github.io/posts/badusb/</guid>
+      <category domain="https://hack-scan.github.io/categories/%E8%BF%91%E6%BA%90%E6%B8%97%E9%80%8F/">近源渗透</category>
       <description>携Badusb进校园的系列测试</description>
     </item>
   </channel>

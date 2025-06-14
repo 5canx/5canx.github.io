@@ -141,5 +141,5 @@ print("解密后:", dec)
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: http://localhost:1313/posts/%E5%AE%89%E5%8D%93%E6%9F%90app%E7%99%BB%E9%99%86%E9%80%86%E5%90%91/  
+> URL: https://hack-scan.github.io/posts/%E5%AE%89%E5%8D%93%E6%9F%90app%E7%99%BB%E9%99%86%E9%80%86%E5%90%91/  
 

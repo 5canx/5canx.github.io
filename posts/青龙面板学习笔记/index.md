@@ -88,5 +88,5 @@ more..待完善
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: http://localhost:1313/posts/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/  
+> URL: https://hack-scan.github.io/posts/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/  
 

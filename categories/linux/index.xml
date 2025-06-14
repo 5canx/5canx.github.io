@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux - 分类 - Scan&#39;s Blog</title>
-    <link>http://localhost:1313/categories/linux/</link>
+    <link>https://hack-scan.github.io/categories/linux/</link>
     <description>Scan&#39;s Blog</description>
     <generator>Hugo 0.147.5 &amp; FixIt v0.3.21-a85a6655</generator>
     <language>zh-cn</language>
     <managingEditor>safexuan@gmail.com (Scan)</managingEditor>
     <webMaster>safexuan@gmail.com (Scan)</webMaster>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hack-scan.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
