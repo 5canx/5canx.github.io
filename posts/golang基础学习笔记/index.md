@@ -335,6 +335,255 @@ func checkError(err error) {
 }
 ```
 
+## 网络交互
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"log"
+	"net/http"
+	"net/url"
+	"time"
+
+	"github.com/gin-gonic/gin"
+	"github.com/redis/go-redis/v9"
+)
+
+var rdb *redis.Client
+
+func initRedis() {
+	rdb = redis.NewClient(&redis.Options{
+		Addr:     "localhost:6379",
+		Password: "123456",
+		DB:       0,
+	})
+
+	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+	defer cancel()
+	if _, err := rdb.Ping(ctx).Result(); err != nil {
+		log.Fatalf("无法连接Redis: %v", err)
+	}
+}
+
+func getFieldValue(key, field string) (string, error) {
+	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
+	defer cancel()
+
+	value, err := rdb.HGet(ctx, key, field).Result()
+	if err == redis.Nil {
+		return "", fmt.Errorf("字段不存在")
+	}
+	if err != nil {
+		return "", fmt.Errorf("查询失败: %w", err)
+	}
+	return value, nil
+}
+
+func main() {
+	initRedis()
+
+	r := gin.Default()
+
+	// 新版路由（路径参数）
+	r.GET("/api/query/:key/:field", func(c *gin.Context) {
+		// 获取并解码路径参数
+		rawKey := c.Param("key")
+		rawField := c.Param("field")
+
+		// URL解码参数
+		key, err := url.PathUnescape(rawKey)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"error": "key参数解码失败",
+			})
+			return
+		}
+
+		field, err := url.PathUnescape(rawField)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"error": "field参数解码失败",
+			})
+			return
+		}
+
+		// 打印解码后的参数（调试用）
+		log.Printf("解码参数: key=%q, field=%q", key, field)
+
+		// 参数有效性检查
+		if key == "" || field == "" {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"error": "key和field不能为空",
+			})
+			return
+		}
+
+		value, err := getFieldValue(key, field)
+		if err != nil {
+			c.JSON(http.StatusNotFound, gin.H{
+				"error": err.Error(),
+			})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{
+			"key":   key,
+			"field": field,
+			"value": value,
+		})
+	})
+
+	log.Println("服务启动在 :8080")
+	if err := r.Run(":8080"); err != nil {
+		log.Fatalf("服务启动失败: %v", err)
+	}
+}
+http://localhost:8080/api/query/new_que/休克早期血压的变化是（%20%20%20）。
+```
+
+`变换路由`
+
+```go
+package main
+
+import (
+	"context"
+	"fmt"
+	"log"
+	"net/http"
+
+	"github.com/gin-gonic/gin"
+	"github.com/redis/go-redis/v9"
+)
+
+var rdb *redis.Client
+
+func initRedis() {
+	rdb = redis.NewClient(&redis.Options{
+		Addr:     "localhost:6379",
+		Password: "123456",
+		DB:       0,
+	})
+
+	// 测试连接
+	if _, err := rdb.Ping(context.Background()).Result(); err != nil {
+		log.Fatalf("无法连接Redis: %v", err)
+	}
+}
+
+func getFieldValue(key, field string) (string, error) {
+	ctx := context.Background()
+
+	// 直接获取指定键和字段的值
+	value, err := rdb.HGet(ctx, key, field).Result()
+	if err == redis.Nil {
+		return "", fmt.Errorf("字段不存在")
+	}
+	if err != nil {
+		return "", fmt.Errorf("查询失败: %w", err)
+	}
+
+	return value, nil
+}
+
+func main() {
+	initRedis()
+
+	r := gin.Default()
+
+	// 精确查询接口
+	r.GET("/api/query", func(c *gin.Context) {
+		key := c.Query("key")     // Redis键名
+		field := c.Query("field") // 字段名
+
+		if key == "" || field == "" {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"error": "key和field参数不能为空",
+			})
+			return
+		}
+
+		value, err := getFieldValue(key, field)
+		if err != nil {
+			c.JSON(http.StatusNotFound, gin.H{
+				"error": err.Error(),
+			})
+			return
+		}
+
+		c.JSON(http.StatusOK, gin.H{
+			"key":   key,
+			"field": field,
+			"value": value, // 返回实际的字段值
+		})
+	})
+
+	log.Println("服务启动在 :8080")
+	r.Run(":8080")
+}
+
+```
+
+
+
+`请求`
+
+```go
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"net/http"
+	"net/url"
+)
+
+func QueryRedisField(apiURL, key, field string) (string, error) {
+	// 构建请求参数
+	params := url.Values{}
+	params.Add("key", key)
+	params.Add("field", field)
+
+	// 发送请求
+	resp, err := http.Get(apiURL + "?" + params.Encode())
+	if err != nil {
+		return "", fmt.Errorf("请求失败: %v", err)
+	}
+	defer resp.Body.Close()
+
+	// 解析响应
+	var result struct {
+		Value string `json:"value"`
+		Error string `json:"error"`
+	}
+	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
+		return "", fmt.Errorf("解析响应失败: %v", err)
+	}
+
+	if result.Error != "" {
+		return "", fmt.Errorf(result.Error)
+	}
+
+	return result.Value, nil
+}
+
+func main() {
+	apiURL := "http://localhost:8080/api/query"
+
+	// 示例查询
+	value, err := QueryRedisField(apiURL, "new_que", "休克早期血压的变化是（   ）。")
+	if err != nil {
+		fmt.Printf("查询失败: %v\n", err)
+		return
+	}
+
+	fmt.Printf("查询结果: %s\n", value)
+}
+```
+
 
 
 ---

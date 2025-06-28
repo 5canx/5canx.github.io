@@ -8,8 +8,17 @@
     <language>zh-cn</language>
     <managingEditor>safexuan@gmail.com (Scan)</managingEditor>
     <webMaster>safexuan@gmail.com (Scan)</webMaster>
-    <lastBuildDate>Wed, 15 May 2024 12:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Jun 2025 20:09:07 +0800</lastBuildDate>
     <atom:link href="https://hack-scan.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CDP基本认识</title>
+      <link>https://hack-scan.github.io/posts/cdp/</link>
+      <pubDate>Fri, 27 Jun 2025 20:09:07 +0800</pubDate><author>safexuan@gmail.com (Scan)</author>
+      <guid>https://hack-scan.github.io/posts/cdp/</guid>
+      <category domain="https://hack-scan.github.io/categories/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/">自动化测试</category>
+      <category domain="https://hack-scan.github.io/categories/python/">Python</category>
+      <description>进阶使用执行：JS代码，模拟按键组合键、切换窗口总结。</description>
+    </item>
     <item>
       <title>Python代码序列化混淆压缩学习记录</title>
       <link>https://hack-scan.github.io/posts/python%E4%BB%A3%E7%A0%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B7%B7%E6%B7%86%E5%8E%8B%E7%BC%A9%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</link>
