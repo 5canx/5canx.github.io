@@ -33,5 +33,5 @@
 ---
 
 > 作者: <no value>  
-> URL: https://hack-scan.github.io/friends/  
+> URL: http://localhost:1313/friends/  
 

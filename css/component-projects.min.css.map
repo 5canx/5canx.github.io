@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "component-projects.min.css",
-	"sourceRoot": "/Users/scan/Downloads/github/hack-scan",
+	"sourceRoot": "/Users/scan/Downloads/github/5canx",
 	"sources": [
 		"themes/component-projects/assets/css/component-projects/index.scss",
 		"themes/component-projects/assets/css/component-projects/repo-card.scss"

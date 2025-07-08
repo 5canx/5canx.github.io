@@ -133,5 +133,5 @@ func main() {
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: https://hack-scan.github.io/posts/go%E7%AE%A1%E9%81%93/  
+> URL: http://localhost:1313/posts/go%E7%AE%A1%E9%81%93/  
 

@@ -109,5 +109,5 @@ plt.show()  #显示所有已经创建的图像
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: https://hack-scan.github.io/posts/opencv%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%E4%B8%80/  
+> URL: http://localhost:1313/posts/opencv%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0%E4%B8%80/  
 

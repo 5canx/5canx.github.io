@@ -32,5 +32,5 @@ plt.imshow(edges,cmap='gray')
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: https://hack-scan.github.io/posts/%E5%BD%A2%E6%80%81%E5%AD%A6%E6%96%B9%E6%B3%95%E6%A3%80%E6%B5%8B/  
+> URL: http://localhost:1313/posts/%E5%BD%A2%E6%80%81%E5%AD%A6%E6%96%B9%E6%B3%95%E6%A3%80%E6%B5%8B/  
 

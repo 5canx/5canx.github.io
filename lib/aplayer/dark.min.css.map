@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "dark.min.css",
-	"sourceRoot": "/Users/scan/Downloads/github/hack-scan",
+	"sourceRoot": "/Users/scan/Downloads/github/5canx",
 	"sources": [
 		"themes/FixIt/assets/lib/aplayer/dark.scss"
 	],
