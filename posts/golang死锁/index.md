@@ -25,5 +25,5 @@
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: http://localhost:1313/posts/golang%E6%AD%BB%E9%94%81/  
+> URL: https://5canx.github.io/posts/golang%E6%AD%BB%E9%94%81/  
 

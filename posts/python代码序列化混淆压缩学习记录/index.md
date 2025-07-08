@@ -127,5 +127,5 @@ Pyc生成要与反编译（反序列化）的Python版本所对应
 ---
 
 > 作者: [Scan](https://www.scan.work/)  
-> URL: http://localhost:1313/posts/python%E4%BB%A3%E7%A0%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B7%B7%E6%B7%86%E5%8E%8B%E7%BC%A9%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/  
+> URL: https://5canx.github.io/posts/python%E4%BB%A3%E7%A0%81%E5%BA%8F%E5%88%97%E5%8C%96%E6%B7%B7%E6%B7%86%E5%8E%8B%E7%BC%A9%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/  
 
